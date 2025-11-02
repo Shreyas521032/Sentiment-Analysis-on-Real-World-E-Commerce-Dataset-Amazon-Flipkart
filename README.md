@@ -36,7 +36,7 @@ https://github.com/user-attachments/assets/3248b04b-f1c2-4819-b8e7-46287d07b826
 ### Source
 The initial dataset was a composite of product reviews from various e-commerce sites (primarily Amazon and Flipkart) sourced from Kaggle, data.world, and UCSD.
 
-* **Kaggle Dataset Link:** [E-Commerce Product Review Data](https://www.kaggle.com/datasets/vivekgediya/ecommerce-product-review-data/data) [1].
+* **Kaggle Dataset Link:** [E-Commerce Product Review Data](https://www.kaggle.com/datasets/vivekgediya/ecommerce-product-review-data/data) [1, 2].
 
 ### Initial Data
 The raw dataset (`Product Review Large Data.csv`) contained **10,971 entries** and 27 columns. A preliminary analysis showed a significant class and source imbalance:
@@ -82,7 +82,7 @@ Two distinct paths were taken for feature engineering based on the model type:
     * **Hyperparameters:**
         * `vocab_size`: 10,000 (Top 10,000 most frequent words).
         * `max_length`: 150 (Reviews are padded or truncated to this length).
-* **Alternatives Considered:** We considered using pre-trained embeddings like Word2Vec or GloVe. However, we opted to train our own `Embedding` layer from scratch. This allows the model to learn word vector representations that are highly specific to the *nuances and vocabulary of e-commerce reviews*, which may not be well-represented in generic pre-trained models.
+* **Alternatives Considered:** We considered using pre-trained embeddings like Word2Vec or GloVe. However, we opted to train our own `Embedding` layer from scratch. This allows the model to learn word vector representations that are highly specific to the *nuances and vocabulary of e-commerce reviews*, which may not be well-represented in generic pre-trained models [3].
 
 ### 2. Model Architecture
 Five models were trained and evaluated to compare performance:
@@ -94,7 +94,7 @@ Five models were trained and evaluated to compare performance:
 5.  **LSTM (Deep Learning):** A Long Short-Term Memory network, which is a type of Recurrent Neural Network (RNN). It's designed to learn long-range dependencies and sequential patterns in data, making it theoretically ideal for text.
 
 * **Why this approach?** This selection allows us to compare computationally efficient classical models against a more complex sequential model. This helps answer a key question: *Is the added complexity and training time of an RNN necessary for this task, or can a tuned classical model like Random Forest or SVM achieve superior results?*
-* **Alternatives Considered:** More advanced (and computationally expensive) transformer models like BERT or RoBERTa were considered. However, the chosen models provide a strong and practical baseline, which is the focus of this project.
+* **Alternatives Considered:** More advanced (and computationally expensive) transformer models like BERT or RoBERTa were considered. However, the chosen models provide a strong and practical baseline, which is the focus of this project [4].
 ---
 
 ## 🚀 Steps to Run the Code
@@ -173,11 +173,11 @@ To contextualize this project's results, we compare our best model's performance
 | Model | Performance (Accuracy / F1) | Context / Source |
 |:---|:---|:---|
 | **This Project (Tuned Random Forest)** | **94% F1-Score** | **Our enhanced, balanced dataset** |
-| BERT (State-of-the-Art) | 85-93% Accuracy | Comparative study of 9 models |
-| BERT (State-of-the-Art) | 89% Accuracy | Comparative study on 400k Amazon reviews |
-| RateNet (1D CNN + BiGRU) | 86.6% Accuracy | Hybrid DL model on Amazon 5-core dataset |
-| SVM (Tuned) | 80.8% - 81.9% Accuracy | Published benchmarks on Amazon reviews |
-| BERT (fine-tuned) | 80.0% Accuracy | Hugging Face model for 1-5 star classification |
+| BERT (State-of-the-Art) | 85-93% Accuracy | Comparative study of 9 models [5] |
+| BERT (State-of-the-Art) | 89% Accuracy | Comparative study on 400k Amazon reviews [6] |
+| RateNet (1D CNN + BiGRU) | 86.6% Accuracy | Hybrid DL model on Amazon 5-core dataset [7] |
+| SVM (Tuned) | 80.8% - 81.9% Accuracy | Published benchmarks on Amazon reviews [8] |
+| BERT (fine-tuned) | 80.0% Accuracy | Hugging Face model for 1-5 star classification [9] |
 
 **Analysis:** Our tuned **Random Forest** model, at **95% F1-score**, performs exceptionally well. It not only surpasses other classical baselines like SVM but also outperforms several state-of-the-art transformer-based **BERT** models from published benchmarks (which scored between 85-93%).
 
@@ -214,5 +214,15 @@ This project successfully demonstrates the end-to-end process of building a high
 ## 📚 References
 
 * [1] Kaggle Dataset: [E-Commerce Product Review Data](https://www.kaggle.com/datasets/vivekgediya/ecommerce-product-review-data/data)
-* UCSD Web Mining Lab: [Amazon Review Data](https://jmcauley.ucsd.edu/data/amazon/)
-* data.world: [Amazon and Flipkart Review Datasets](https://data.world/community/datasets?q=amazon+flipkart+reviews)
+* [2] UCSD Web Mining Lab: [Amazon Review Data](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews)
+* [3] Asudani DS, Nagwani NK, Singh P. Impact of word embedding models on text analytics in deep learning environment: a review. Artif Intell Rev. 2023 Feb 22:1-81. doi: 10.1007/s10462-023-10419-1. Epub ahead of print. PMID: 36844886; PMCID: PMC9944441.[https://pmc.ncbi.nlm.nih.gov/articles/PMC9944441/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9944441/)
+* [4] Kaur, G., Haraldsson, S. & Bracciali, A. Comparative analysis of transformer models for sentiment classification of UK CBDC discourse on X. Discov Anal 3, 7 (2025).[https://link.springer.com/article/10.1007/s44257-025-00035-4](https://link.springer.com/article/10.1007/s44257-025-00035-4)
+* [5]  Nusrat Jahan, Jubayer Ahamed, Dip Nandi, "Enhancing E-commerce Sentiment Analysis with Advanced BERT Techniques", International Journal of Information Engineering and Electronic Business(IJIEEB), Vol.17, No.3, pp. 49-61,2025. DOI:10.5815/ijieeb.2025.03.04.[https://www.mecs-press.org/ijieeb/ijieeb-v17-n3/IJIEEB-V17-N3-4.pdf](https://www.mecs-press.org/ijieeb/ijieeb-v17-n3/IJIEEB-V17-N3-4.pdf)
+* [6] Ali, H.; Hashmi, E.; Yayilgan Yildirim, S.; Shaikh, S. Analyzing Amazon Products Sentiment: A Comparative Study of Machine and Deep Learning, and Transformer-Based Techniques. Electronics 2024, 13, 1305. https://doi.org/10.3390/electronics13071305.[https://www.mdpi.com/2079-9292/13/7/1305](https://www.mdpi.com/2079-9292/13/7/1305)
+* [7] Sorour, S.E.; Alojail, A.; El-Shora, A.; Amin, A.E.; Abohany, A.A. A Hybrid Deep Learning Approach for Enhanced Sentiment Classification and Consistency Analysis in Customer Reviews. Mathematics 2024, 12, 3856. https://doi.org/10.3390/math12233856.[https://www.mdpi.com/2227-7390/12/23/3856](https://www.mdpi.com/2227-7390/12/23/3856)
+* [8] Yi Liu, Jiahuan Lu, Jie Yang, Feng Mao. Sentiment analysis for e-commerce product reviews by deep learning model of Bert-BiGRU-Softmax[J]. Mathematical Biosciences and Engineering, 2020, 17(6): 7819-7837. doi: 10.3934/mbe.2020398.[https://www.aimspress.com/article/10.3934/mbe.2020398](https://www.aimspress.com/article/10.3934/mbe.2020398)
+* [9] Talaat, A.S. Sentiment analysis classification system using hybrid BERT models. J Big Data 10, 110 (2023). https://doi.org/10.1186/s40537-023-00781-w.[https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00781-w](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00781-w)
+
+
+
+
