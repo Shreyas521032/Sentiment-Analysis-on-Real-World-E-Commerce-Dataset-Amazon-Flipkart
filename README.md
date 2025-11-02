@@ -1,8 +1,12 @@
 # Sentiment Analysis on Real-World E-Commerce Dataset (Amazon & Flipkart)
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/])
-[![Demo Video](https://img.shields.io/badge/Demo-Video-red?style=for-the-badge&logo=youtube)]([[YOUR_DEMO_VIDEO_LINK](https://github.com/user-attachments/assets/098b569c-80a1-487d-adab-c3ed3aa902a2
-)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/)
+
+[![Demo Video](https://img.shields.io/badge/Demo-Video-red?style=for-the-badge&logo=youtube)](https://github.com/user-attachments/assets/098b569c-80a1-487d-adab-c3ed3aa902a2)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6f1b0fa3-8f33-464f-a0df-5e5785987ff9" alt="demo-video-ezgif com-video-to-gif-converter" />
+</p>
 
 ## 📖 Overview
 
