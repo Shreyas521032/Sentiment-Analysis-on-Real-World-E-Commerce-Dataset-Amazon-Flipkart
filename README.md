@@ -34,33 +34,33 @@ https://github.com/user-attachments/assets/3248b04b-f1c2-4819-b8e7-46287d07b826
 ## 💾 Dataset
 
 ### Source
-The initial dataset was a composite of product reviews from various e-commerce sites (primarily Amazon and Flipkart) sourced from Kaggle, data.world, and UCSD.
+The initial dataset consisted of product reviews on several online stores (mainly Amazon and Flipkart), obtained on Kaggle, data.world, and UCSD.
 
 * **Kaggle Dataset Link:** [E-Commerce Product Review Data](https://www.kaggle.com/datasets/vivekgediya/ecommerce-product-review-data/data) [1, 2].
 
 ### Initial Data
-The raw dataset (`Product Review Large Data.csv`) contained **10,971 entries** and 27 columns. A preliminary analysis showed a significant class and source imbalance:
+The raw data (Product Review Large Data.csv) had **10,971 records** and 27 variables. The initial examination of this was a strong imbalance in classes and sources:
 * **Brand:** Flipkart (9,374 reviews), Amazon (1,585 reviews)
-* **Ratings:** Heavily skewed towards 5-star reviews.
+* **Ratings:** The rating is heavily biased towards 5 star reviews.
 
 ### Preprocessing and Enhancement
-The data underwent a two-phase enhancement process:
+The data was subjected to a two step data improvement procedure:
 
 1.  **Phase 1: Initial Cleaning & Splitting**
     * Dropped all columns except `reviews.text`, `reviews.rating`, and `brand`.
     * Removed rows with missing values.
-    * Separated the data into two dataframes (Amazon and Flipkart) to analyze cross-domain performance.
+    * Categorized the data into two data frames (Amazon and Flipkart) to compare cross-domain performance.
     * Applied a text cleaning function:
         * Converted text to lowercase.
-        * Removed HTML tags, URLs, and non-alphabetic characters.
+        * Eliminated HTML tags, URLs and non alpha characters.
         * Removed standard English stopwords.
         * Applied lemmatization to reduce words to their root form.
 
 2.  **Phase 2: Handling Class Imbalance (Hyperparameter Tuning Dataset)**
-    * To build the final, robust models for the app, the class imbalance was addressed.
+    * The class imbalance was taken care of in order to develop the final, robust models of the app.
     * The `reviews.rating` column was found to be heavily skewed.
     * **RandomOverSampler** (from `imbalanced-learn`) was used to oversample the minority classes (1, 2, 3, and 4-star reviews) to match the number of 5-star reviews.
-    * This resulted in a new, balanced dataset (`Enhanced_Product_Review_Data.csv`) with **23,725 entries**, used for final model tuning and evaluation.
+    * This led to a new and balanced dataset (`Enhanced_Product_Review_Data.csv`) with **23,725 entries**, which was then utilized in final model tuning and testing.
 
 ---
 
