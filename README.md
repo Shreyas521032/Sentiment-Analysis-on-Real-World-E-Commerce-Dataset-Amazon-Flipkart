@@ -1,12 +1,12 @@
-# Sentiment Analysis on Real-World E-Commerce Dataset (Amazon & Flipkart)
+# Sentiment Analysis on E-Commerce Real-World Data (Amazon & Flipkart)
 
 ## 📖 Description
 
-This project tackles the problem of **multi-class sentiment analysis** for e-commerce product reviews. In today's data-driven world, understanding customer feedback is crucial for businesses to gauge product reception, identify issues, and make informed decisions. This system moves beyond simple positive/negative classification to predict a specific 1-to-5 star rating based on the review text.
+The issue that is addressed in this project is the **multi-class sentiment analysis** of e-commerce product review. In the current data-driven environment, the importance of **interpreting customer feedback** becomes central to the business to determine how the product is received, which problems arise, and decisions are made. Instead of having a simple positive/negative classification, this system predicts a particular 1-to-5 stars rating according to the review text.
 
-We explore and compare five different machine learning and deep learning models to determine the most effective approach. The project culminates in a fully interactive **Streamlit web application** where users can upload data, train models, and perform live predictions on new reviews.
+In order to find out the most effective model we **compare and examine five different machine learning and deep learning models**. The final stage of the project will be a complete **interactive Streamlit web application** that contains the possibility of uploading data, training models, and live prediction of new reviews.
 
-A key part of this analysis was exploring **cross-domain generalization** (training on Amazon data, testing on Flipkart data) and handling severe **class imbalance** through oversampling and hyperparameter tuning to achieve high-performance, robust models.
+One of the most important aspects of this analysis was the experiment with **cross-domain generalization** (train on Amazon, test on Flipkart) and severe class imbalance by using **oversampling and hyperparameter optimization** to produce high-performance and robust models.
 
 ### ✨ Key Features of the Project
 
