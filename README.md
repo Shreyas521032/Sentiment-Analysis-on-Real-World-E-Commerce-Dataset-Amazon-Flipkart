@@ -174,7 +174,7 @@ The balanced test set was used to test the tuned models. **Random Forest** becam
 
 ### Comparison with Published Methods
 
-To contextualize this project's results, we compare our best model's performance against benchmarks from published research on similar Amazon 1-5 star review classification tasks.
+In order to contextualize the results of this project, we compare the performance of our best model to benchmarks of published research on similar Amazon 1-5 star review classification tasks.
 
 | Model | Performance (Accuracy / F1) | Context / Source |
 |:---|:---|:---|
@@ -185,14 +185,14 @@ To contextualize this project's results, we compare our best model's performance
 | SVM (Tuned) | 80.8% - 81.9% Accuracy | Published benchmarks on Amazon reviews [8] |
 | BERT (fine-tuned) | 80.0% Accuracy | Hugging Face model for 1-5 star classification [9] |
 
-**Analysis:** Our tuned **Random Forest** model, at **95% F1-score**, performs exceptionally well. It not only surpasses other classical baselines like SVM but also outperforms several state-of-the-art transformer-based **BERT** models from published benchmarks (which scored between 85-93%).
+**Analysis:** Our tuned **Random Forest** model, at **95% F1-score**, performs exceptionally well. It does not only outperform other classical baselines such as SVM but also outperform a number of state-of-the-art transformer-based **BERT models** that have been published benchmarks (with scores of 85-93%).
 
-This suggests that for this specific dataset, the combination of **effective class balancing** (using `RandomOverSampler`) and **thorough hyperparameter tuning** was more impactful than model architecture alone. It highlights that a well-engineered classical ensemble model can be a highly effective and computationally cheaper alternative to more complex deep learning architectures.
+This suggests that for this specific dataset, the combination of **effective class balancing** (using `RandomOverSampler`) and **thorough hyperparameter tuning** was more impactful than model architecture alone. It notes that a carefully designed classical ensemble model can be a very efficient and computationally less expensive substitute to more intricate deep learning structures.
 
 ### Cross-Domain Generalization Gap
-An initial experiment was conducted (in the notebook) to test generalization. Models were trained *only* on Amazon data and then tested on both an Amazon validation set (in-domain) and the Flipkart dataset (cross-domain).
+Generalization was tested by firstly carrying out an experiment (in the notebook). They were trained only on Amazon data and tested on Amazon validation set (in-domain) and the Flipkart data (cross-domain).
 
-This revealed a significant **generalization gap**, where performance dropped substantially when moving from Amazon to Flipkart reviews, highlighting the different language, slang, and context used on the two platforms.
+This also exposed a huge gap in generalization as performance fell significantly upon transferring between Amazon and Flipkart reviews, which is due to the **language, slang, and the context on the two websites being different**.
 
 | model | Amazon (Cross-Domain Test) | Amazon (In-Domain Validation) | Flipkart (Cross-Domain Test) | Performance Drop (Generalization Gap) - Amazon | Performance Drop (Generalization Gap) - Flipkart |
 |:---|---:|---:|---:|---:|---:|
@@ -202,7 +202,7 @@ This revealed a significant **generalization gap**, where performance dropped su
 | LSTM | 0.6573 | 0.5683 | 0.4205 | -0.0890 | 0.1479 |
 | Naive Bayes | 0.5969 | 0.5725 | 0.4205 | -0.0245 | 0.1520 |
 
-*(Note: The negative drop for Amazon indicates the test set was easier than the validation set, likely due to the oversampling and splitting logic in that specific experiment. The key metric is the **Flipkart gap**, which shows a ~15-18% F1-score drop across all models.)*
+*(Note: The negative drop of Amazon indicates the test set was less challenging than the validation set, which in that particular test was probably because of the oversampling and splitting logic. The most essential measure is the Flipkart gap that indicates a decrease in F1-score by about 15-18% in all models.)*
 
 ---
 
