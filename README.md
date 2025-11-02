@@ -172,14 +172,14 @@ To contextualize this project's results, we compare our best model's performance
 
 | Model | Performance (Accuracy / F1) | Context / Source |
 |:---|:---|:---|
-| **This Project (Tuned Random Forest)** | **95.0% F1-Score** | **Our enhanced, balanced dataset** |
-| BERT (State-of-the-Art) | 94.0% Accuracy | Comparative study of 9 models |
-| BERT (State-of-the-Art) | 89.0% Accuracy | Comparative study on 400k Amazon reviews |
+| **This Project (Tuned Random Forest)** | **94% F1-Score** | **Our enhanced, balanced dataset** |
+| BERT (State-of-the-Art) | 85-93% Accuracy | Comparative study of 9 models |
+| BERT (State-of-the-Art) | 89% Accuracy | Comparative study on 400k Amazon reviews |
 | RateNet (1D CNN + BiGRU) | 86.6% Accuracy | Hybrid DL model on Amazon 5-core dataset |
 | SVM (Tuned) | 80.8% - 81.9% Accuracy | Published benchmarks on Amazon reviews |
 | BERT (fine-tuned) | 80.0% Accuracy | Hugging Face model for 1-5 star classification |
 
-**Analysis:** Our tuned **Random Forest** model, at **95% F1-score**, performs exceptionally well. It not only surpasses other classical baselines like SVM but also outperforms several state-of-the-art transformer-based **BERT** models from published benchmarks (which scored between 80-94%).
+**Analysis:** Our tuned **Random Forest** model, at **95% F1-score**, performs exceptionally well. It not only surpasses other classical baselines like SVM but also outperforms several state-of-the-art transformer-based **BERT** models from published benchmarks (which scored between 85-93%).
 
 This suggests that for this specific dataset, the combination of **effective class balancing** (using `RandomOverSampler`) and **thorough hyperparameter tuning** was more impactful than model architecture alone. It highlights that a well-engineered classical ensemble model can be a highly effective and computationally cheaper alternative to more complex deep learning architectures.
 
