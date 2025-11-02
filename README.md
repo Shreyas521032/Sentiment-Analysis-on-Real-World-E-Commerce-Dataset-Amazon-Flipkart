@@ -147,7 +147,7 @@ There are five models which were trained and evaluated in order to compare perfo
 ## 🔬 Experiments & Results
 
 ### Hyperparameter Tuning
-Before final evaluation, the four classical ML models were tuned using `GridSearchCV` on the balanced dataset (`Enhanced_Product_Review_Data.csv`) to find their optimal parameters.
+The optimal parameters of the four classical ML models were determined beforehand by tuning them with the help of `GridSearchCV` to the balanced dataset (`Enhanced_Product_Review_Data.csv`) to identify the optimal parameters.
 
 * **Naive Bayes:** `{'alpha': 0.1}`
 * **Logistic Regression:** `{'C': 10, 'multi_class': 'auto', 'solver': 'lbfgs'}`
@@ -155,7 +155,7 @@ Before final evaluation, the four classical ML models were tuned using `GridSear
 * **Random Forest:** `{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 150}`
 
 ### Results Summary
-The tuned models were evaluated on the balanced test set. **Random Forest emerged as the top-performing model** by a significant margin, achieving a 95% F1-score. This demonstrates that with proper preprocessing, feature engineering, and tuning, ensemble methods can outperform baseline deep learning models on this task.
+The balanced test set was used to test the tuned models. **Random Forest** became the best model by far with a F1-score of 95 percent. This shows that ensemble methods can be even more successful than the baseline deep learning models on this task with reasonable preprocessing, feature engineering, and tuning.
 
 | Model | Dataset | Accuracy | F1-Score |
 |:---|:---|---:|---:|
