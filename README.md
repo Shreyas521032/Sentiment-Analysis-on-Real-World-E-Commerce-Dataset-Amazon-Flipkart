@@ -4,9 +4,7 @@
 
 ### 🎥 Application Demonstration
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6f1b0fa3-8f33-464f-a0df-5e5785987ff9" alt="Application Demo GIF" />
-</p>
+https://github.com/user-attachments/assets/3248b04b-f1c2-4819-b8e7-46287d07b826
 
 ## 📖 Overview
 
