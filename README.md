@@ -66,35 +66,36 @@ The data was subjected to a two step data improvement procedure:
 
 ## 🛠️ Methodology
 
-The problem was framed as a **multi-class text classification** task. The core challenge was transforming raw text into numerical features that models can understand and then comparing different modeling architectures.
+The issue was presented as a **text-classification with multiple classes**. The major difficulty lay in converting raw text to numerical features that can be interpreted by models, and comparing modeling architectures.
 
 ### 1. Feature Engineering
-Two distinct paths were taken for feature engineering based on the model type:
+The feature engineering was done in two different directions, depending on the type of the model:
 
 * **Path A: TF-IDF (for Classical ML Models)**
     * **Technique:** Term Frequency-Inverse Document Frequency (`TfidfVectorizer`).
-    * **Why:** This approach weighs words based on their importance in a document relative to the entire corpus. It's highly effective for classical ML models and captures which words are most discriminative for a particular rating.
+    * **Why:** This approach weighs words based on their importance in a document relative to the entire corpus. It is very useful in the case of classical ML models, and it learns what words are most discriminative to a specific rating.
     * **Hyperparameter:** A `max_features` limit of 5,000 was used to keep the feature space manageable and filter out extremely rare words.
 
 * **Path B: Tokenized Sequences (for Deep Learning)**
     * **Technique:** `Tokenizer` and `pad_sequences` from Keras.
-    * **Why:** LSTMs require sequences of integers as input, where each integer represents a word in a vocabulary. This method preserves the *order* of words, which is critical for LSTMs to learn context and sequential patterns.
+    * **Why:** LSTMs require sequences of integers as input, where each integer represents a word in a vocabulary. This approach maintains the sequence of words, and that is essential to LSTMs getting to know the context and sequential patterns.
+
     * **Hyperparameters:**
         * `vocab_size`: 10,000 (Top 10,000 most frequent words).
         * `max_length`: 150 (Reviews are padded or truncated to this length).
-* **Alternatives Considered:** We considered using pre-trained embeddings like Word2Vec or GloVe. However, we opted to train our own `Embedding` layer from scratch. This allows the model to learn word vector representations that are highly specific to the *nuances and vocabulary of e-commerce reviews*, which may not be well-represented in generic pre-trained models [3].
+* **Alternatives Considered:** We considered using pre-trained embeddings like Word2Vec or GloVe. However, we opted to train our own `Embedding` layer from scratch. This enables the model to train word vector representations that are very specific to the wording and vocabulary of e-commerce review which can be poorly captured in generic pre-trained models [3].
 
 ### 2. Model Architecture
-Five models were trained and evaluated to compare performance:
+There are five models which were trained and evaluated in order to compare performance:
 
-1.  **Multinomial Naive Bayes (NB):** A probabilistic baseline model that is fast and performs well on text classification tasks, assuming conditional independence between features.
-2.  **Logistic Regression (LR):** A robust and interpretable linear model that is highly effective for text classification, especially with TF-IDF features.
-3.  **Linear Support Vector Machine (SVM):** A powerful linear classifier that works by finding the optimal hyperplane to separate classes. It is known for its high performance on high-dimensional sparse data like TF-IDF vectors.
-4.  **Random Forest (RF):** An ensemble model that builds multiple decision trees and merges their results. It's robust to overfitting and can capture complex non-linear relationships.
-5.  **LSTM (Deep Learning):** A Long Short-Term Memory network, which is a type of Recurrent Neural Network (RNN). It's designed to learn long-range dependencies and sequential patterns in data, making it theoretically ideal for text.
+1.  **Multinomial Naive Bayes (NB):** This is a fast probabilistic baseline model that can be used in text classification problems, though it requires the use of the assumption of conditional independence between features.
+2.  **Logistic Regression (LR):** It is a strong and readable linear-type model that is very good at classifying text, particularly TF-IDF.
+3.  **Linear Support Vector Machine (SVM):** This is a powerful linear classifier, whereby the optimal hyperplane is identified to separate the classes. It is famous to have a high-performance when working with high-dimensional sparse data such as TF-IDF vectors.
+4.  **Random Forest (RF):** It is an ensemble model which constructs several trees and combines the outcomes of the trees. It is strong against overfitting and is capable of resolving complicated non-linear associations.
+5.  **LSTM (Deep Learning):** A Long Short-Term Memory network, It is programmed to acquire long-range dependencies and sequence patterns in data thus theoretically suited to text.
 
-* **Why this approach?** This selection allows us to compare computationally efficient classical models against a more complex sequential model. This helps answer a key question: *Is the added complexity and training time of an RNN necessary for this task, or can a tuned classical model like Random Forest or SVM achieve superior results?*
-* **Alternatives Considered:** More advanced (and computationally expensive) transformer models like BERT or RoBERTa were considered. However, the chosen models provide a strong and practical baseline, which is the focus of this project [4].
+* **Why this approach?** This choice gives us the opportunity to compare computationally efficient classical models and a more sophisticated sequential model. This assists in answering one question: *Does the extra complexity and training time of an RNN make this task difficult or can a more tuned classical model such as: Random Forest or SVM achieve better results?*
+* **Alternatives Considered:** More sophisticated (and computationally costly) transformer models, such as BERT or RoBERTa, were tried. Nevertheless, the selected models present a high and realistic starting point, which is the emphasis of this project [4].
 ---
 
 ## 🚀 Steps to Run the Code
