@@ -82,6 +82,7 @@ Two distinct paths were taken for feature engineering based on the model type:
     * **Hyperparameters:**
         * `vocab_size`: 10,000 (Top 10,000 most frequent words).
         * `max_length`: 150 (Reviews are padded or truncated to this length).
+* **Alternatives Considered:** We considered using pre-trained embeddings like Word2Vec or GloVe. However, we opted to train our own `Embedding` layer from scratch. This allows the model to learn word vector representations that are highly specific to the *nuances and vocabulary of e-commerce reviews*, which may not be well-represented in generic pre-trained models.
 
 ### 2. Model Architecture
 Five models were trained and evaluated to compare performance:
@@ -92,6 +93,8 @@ Five models were trained and evaluated to compare performance:
 4.  **Random Forest (RF):** An ensemble model that builds multiple decision trees and merges their results. It's robust to overfitting and can capture complex non-linear relationships.
 5.  **LSTM (Deep Learning):** A Long Short-Term Memory network, which is a type of Recurrent Neural Network (RNN). It's designed to learn long-range dependencies and sequential patterns in data, making it theoretically ideal for text.
 
+* **Why this approach?** This selection allows us to compare computationally efficient classical models against a more complex sequential model. This helps answer a key question: *Is the added complexity and training time of an RNN necessary for this task, or can a tuned classical model like Random Forest or SVM achieve superior results?*
+* **Alternatives Considered:** More advanced (and computationally expensive) transformer models like BERT or RoBERTa were considered. However, the chosen models provide a strong and practical baseline, which is the focus of this project.
 ---
 
 ## 🚀 Steps to Run the Code
