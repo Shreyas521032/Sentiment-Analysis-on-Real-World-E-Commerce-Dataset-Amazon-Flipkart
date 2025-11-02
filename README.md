@@ -2,11 +2,10 @@
 
 🔗 **Live Deployed Project:** [https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app](https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/)
 
-
 ### 🎥 Application Demonstration
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/098b569c-80a1-487d-adab-c3ed3aa902a2" alt="demo-video-ezgif com-video-to-gif-converter" />
+  <img src="https://github.com/user-attachments/assets/2dfc1ca9-3995-4850-b3db-665625f8c106" alt="demonstration-video" />
 </p>
 
 ## 📖 Overview
