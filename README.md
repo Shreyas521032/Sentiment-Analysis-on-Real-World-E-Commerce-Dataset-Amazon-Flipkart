@@ -25,8 +25,6 @@ A key part of this analysis was exploring **cross-domain generalization** (train
 
 🔗 **Live Deployed Project:** [https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app](https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/)
 
----
-
 ### 🎥 Project Demonstration
 
 https://github.com/user-attachments/assets/3248b04b-f1c2-4819-b8e7-46287d07b826
