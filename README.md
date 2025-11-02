@@ -2,7 +2,7 @@
 
 🔗 **Live Deployed Project:** [https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app](https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/)
 
-### 🎥 Application Demonstration
+### 🎥 Project Demonstration
 
 https://github.com/user-attachments/assets/3248b04b-f1c2-4819-b8e7-46287d07b826
 
@@ -14,7 +14,7 @@ We explore and compare five different machine learning and deep learning models 
 
 A key part of this analysis was exploring **cross-domain generalization** (training on Amazon data, testing on Flipkart data) and handling severe **class imbalance** through oversampling and hyperparameter tuning to achieve high-performance, robust models.
 
-### ✨ Key Features of the Web App
+### ✨ Key Features of the Project
 
 * **📊 Exploratory Data Analysis (EDA):** Upload a dataset to see an interactive overview, including rating distributions, review length analysis, and brand breakdowns.
 * **⚙️ Multi-Model Training:** Train five different models (Naive Bayes, Logistic Regression, SVM, Random Forest, LSTM) on the fly with configurable parameters (test size, TF-IDF features).
@@ -62,7 +62,7 @@ The data underwent a two-phase enhancement process:
 
 ---
 
-## 🛠️ Methods
+## 🛠️ Methodelogy
 
 The problem was framed as a **multi-class text classification** task. The core challenge was transforming raw text into numerical features that models can understand and then comparing different modeling architectures.
 
@@ -160,8 +160,6 @@ The tuned models were evaluated on the balanced test set. **Random Forest emerge
 | SVM | Tuned Test Set | 0.8468 | 0.8447 |
 | **Random Forest** | **Tuned Test Set** | **0.9498** | **0.9496** |
 | LSTM (Baseline) | Tuned Test Set | 0.6738 | 0.5725 |
-
-*(Note: The LSTM result is from the initial untuned model, included for comparison.)*
 
 ### Cross-Domain Generalization Gap
 An initial experiment was conducted (in the notebook) to test generalization. Models were trained *only* on Amazon data and then tested on both an Amazon validation set (in-domain) and the Flipkart dataset (cross-domain).
