@@ -1,6 +1,6 @@
 # Sentiment Analysis on Real-World E-Commerce Dataset (Amazon & Flipkart)
 
-## 📖 Overview
+## 📖 Description
 
 This project tackles the problem of **multi-class sentiment analysis** for e-commerce product reviews. In today's data-driven world, understanding customer feedback is crucial for businesses to gauge product reception, identify issues, and make informed decisions. This system moves beyond simple positive/negative classification to predict a specific 1-to-5 star rating based on the review text.
 
