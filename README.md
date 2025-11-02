@@ -208,12 +208,12 @@ This also exposed a huge gap in generalization as performance fell significantly
 
 ## 🏁 Conclusion
 
-This project successfully demonstrates the end-to-end process of building a high-performance sentiment analysis model.
+The project has managed to showcase the whole process of constructing a high-performance sentiment analysis model.
 
-* **Key Result:** A tuned **Random Forest** classifier, trained on a balanced dataset with TF-IDF features, was the most effective model, achieving an F1-score of **0.9496** for 5-class rating prediction.
-* **Key Learning:** Data preprocessing and, most importantly, **handling class imbalance** (via RandomOverSampler) were the most critical steps for improving model performance. The baseline models performed poorly on the initial imbalanced data.
-* **Domain Challenge:** The initial cross-domain analysis confirmed that models trained on one e-commerce platform (Amazon) do not generalize well to another (Flipkart) without fine-tuning, due to differences in review style and vocabulary.
-* **Application:** The final Streamlit app provides a practical and user-friendly interface for anyone to leverage these trained models for live predictions, demonstrating the real-world applicability of the project.
+* **Key Result:** The best model was a tuned **Random Forest classifier**, which was trained on a balanced dataset with TF-IDF features and had F1-score of **0.9496** on rating prediction with 5 classes.
+* **Key Learning:** The most important steps to make the models work better were data preprocessing and, most of all, addressing the issue of **class imbalance** (through RandomOverSampler). The initial imbalanced data were poorly fit in the baseline models.
+* **Domain Challenge:** The preliminary cross-domain experiment revealed that models, trained on a single platform of the e-commerce sector (Amazon) cannot be safely generalized to a different platform (Flipkart) without further fine-tuning because of the differences in the style of reviews and vocabulary.
+* **Application:** The Streamlit application has an easy-to-use and straightforward interface that anyone can use to take advantage of these trained models and make live predictions, which proves the usefulness of the project in practice.
 
 ---
 
