@@ -211,7 +211,7 @@ def main():
         
         page = st.radio(
             "Select Page:",
-            ["🏠 Home", "📊 Data Analysis", "🤖 Model Training", "🔮 Live Prediction", "📈 Results & Metrics"],
+            ["🏠 Home", "📊 Data Analysis", "⚙️ Model Training", "🔮 Live Prediction", "📈 Results & Metrics"],
             label_visibility="collapsed"
         )
         
@@ -226,7 +226,7 @@ def main():
         show_home()
     elif page == "📊 Data Analysis":
         show_data_analysis()
-    elif page == "🤖 Model Training":
+    elif page == "⚙️ Model Training":
         show_model_training()
     elif page == "🔮 Live Prediction":
         show_live_prediction()
@@ -265,7 +265,7 @@ def show_home():
     with col2:
         st.markdown("""
         <div class='metric-card'>
-            <h3>🤖 Multi-Model Training</h3>
+            <h3>⚙️ Multi-Model Training</h3>
             <p>Train and compare 5 different ML/DL models simultaneously</p>
         </div>
         """, unsafe_allow_html=True)
@@ -439,7 +439,7 @@ def show_data_analysis():
 
 def show_model_training():
     """Model training page"""
-    st.header("🤖 Model Training & Evaluation")
+    st.header("⚙️ Model Training & Evaluation")
     
     if not st.session_state.data_loaded:
         st.warning("⚠️ Please load data first in the 'Data Analysis' section")
