@@ -166,6 +166,12 @@ The tuned models were evaluated on the balanced test set. **Random Forest emerge
 | **Random Forest** | **Tuned Test Set** | **0.9498** | **0.9496** |
 | LSTM (Baseline) | Tuned Test Set | 0.6738 | 0.5725 |
 
+<img width="583" height="476" alt="image" src="https://github.com/user-attachments/assets/c827bad8-29da-4a5e-b87e-8ef51b5bee36" />
+<img width="583" height="476" alt="image" src="https://github.com/user-attachments/assets/648d44e0-8778-4683-98cc-b7ee2fe92c10" />
+<img width="583" height="476" alt="image" src="https://github.com/user-attachments/assets/d114c5c1-8d73-4030-b628-a8036a657b7b" />
+<img width="583" height="476" alt="image" src="https://github.com/user-attachments/assets/9e1019b2-15d8-4bd6-b2aa-754340e0c6fb" />
+
+
 ### Comparison with Published Methods
 
 To contextualize this project's results, we compare our best model's performance against benchmarks from published research on similar Amazon 1-5 star review classification tasks.
