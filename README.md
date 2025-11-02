@@ -170,7 +170,6 @@ The tuned models were evaluated on the balanced test set. **Random Forest emerge
 <img width="583" height="476" alt="image" src="https://github.com/user-attachments/assets/648d44e0-8778-4683-98cc-b7ee2fe92c10" />
 <img width="583" height="476" alt="image" src="https://github.com/user-attachments/assets/d114c5c1-8d73-4030-b628-a8036a657b7b" />
 <img width="583" height="476" alt="image" src="https://github.com/user-attachments/assets/9e1019b2-15d8-4bd6-b2aa-754340e0c6fb" />
-<img width="592" height="476" alt="image" src="https://github.com/user-attachments/assets/f5180d96-5c0c-4f6d-b6bb-761714fd0b19" />
 
 ---
 
