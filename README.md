@@ -7,7 +7,7 @@
 ### 🎥 Application Demonstration
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6f1b0fa3-8f33-464f-a0df-5e5785987ff9" alt="demo-video-ezgif com-video-to-gif-converter" />
+  <img src="https://github.com/user-attachments/assets/098b569c-80a1-487d-adab-c3ed3aa902a2" alt="demo-video-ezgif com-video-to-gif-converter" />
 </p>
 
 ## 📖 Overview
