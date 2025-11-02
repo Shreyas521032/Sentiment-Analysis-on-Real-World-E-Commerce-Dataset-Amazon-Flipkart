@@ -36,7 +36,7 @@ https://github.com/user-attachments/assets/3248b04b-f1c2-4819-b8e7-46287d07b826
 ### Source
 The initial dataset was a composite of product reviews from various e-commerce sites (primarily Amazon and Flipkart) sourced from Kaggle, data.world, and UCSD.
 
-* **Kaggle Dataset Link:** [E-Commerce Product Review Data](https://www.kaggle.com/datasets/vivekgediya/ecommerce-product-review-data/data)[1].
+* **Kaggle Dataset Link:** [E-Commerce Product Review Data](https://www.kaggle.com/datasets/vivekgediya/ecommerce-product-review-data/data) [1].
 
 ### Initial Data
 The raw dataset (`Product Review Large Data.csv`) contained **10,971 entries** and 27 columns. A preliminary analysis showed a significant class and source imbalance:
