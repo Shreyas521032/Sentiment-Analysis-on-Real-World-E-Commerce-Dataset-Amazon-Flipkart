@@ -14,6 +14,11 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, f1_score
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, LSTM, Dense, SpatialDropout1D
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -211,7 +216,7 @@ def main():
         
         page = st.radio(
             "Select Page:",
-            ["🏠 Home", "📊 Data Analysis", "⚙️ Model Training", "🔮 Live Prediction", "📈 Results & Metrics"],
+            ["🏠 Home", "📊 Data Analysis", "🤖 Model Training", "🔮 Live Prediction", "📈 Results & Metrics"],
             label_visibility="collapsed"
         )
         
@@ -226,7 +231,7 @@ def main():
         show_home()
     elif page == "📊 Data Analysis":
         show_data_analysis()
-    elif page == "⚙️ Model Training":
+    elif page == "🤖 Model Training":
         show_model_training()
     elif page == "🔮 Live Prediction":
         show_live_prediction()
@@ -265,7 +270,7 @@ def show_home():
     with col2:
         st.markdown("""
         <div class='metric-card'>
-            <h3>⚙️ Multi-Model Training</h3>
+            <h3>🤖 Multi-Model Training</h3>
             <p>Train and compare 5 different ML/DL models simultaneously</p>
         </div>
         """, unsafe_allow_html=True)
@@ -439,7 +444,7 @@ def show_data_analysis():
 
 def show_model_training():
     """Model training page"""
-    st.header("⚙️ Model Training & Evaluation")
+    st.header("🤖 Model Training & Evaluation")
     
     if not st.session_state.data_loaded:
         st.warning("⚠️ Please load data first in the 'Data Analysis' section")
