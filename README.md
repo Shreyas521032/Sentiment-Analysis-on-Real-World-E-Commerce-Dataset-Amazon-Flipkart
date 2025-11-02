@@ -64,7 +64,7 @@ The data underwent a two-phase enhancement process:
 
 ---
 
-## 🛠️ Methodelogy
+## 🛠️ Methodology
 
 The problem was framed as a **multi-class text classification** task. The core challenge was transforming raw text into numerical features that models can understand and then comparing different modeling architectures.
 
