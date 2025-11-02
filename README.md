@@ -213,6 +213,6 @@ This project successfully demonstrates the end-to-end process of building a high
 
 ## 📚 References
 
-*[1] Kaggle Dataset: [E-Commerce Product Review Data](https://www.kaggle.com/datasets/vivekgediya/ecommerce-product-review-data/data)
+* [1] Kaggle Dataset: [E-Commerce Product Review Data](https://www.kaggle.com/datasets/vivekgediya/ecommerce-product-review-data/data)
 * UCSD Web Mining Lab: [Amazon Review Data](https://jmcauley.ucsd.edu/data/amazon/)
 * data.world: [Amazon and Flipkart Review Datasets](https://data.world/community/datasets?q=amazon+flipkart+reviews)
