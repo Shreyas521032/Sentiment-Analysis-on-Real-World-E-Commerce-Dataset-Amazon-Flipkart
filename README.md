@@ -100,8 +100,6 @@ There are five models which were trained and evaluated in order to compare perfo
 
 ## 🚀 Steps to Run the Code
 
-To run the interactive Streamlit application on your local machine, follow these steps:
-
 1.  **Clone the repository:**
     ```bash
     git clone [YOUR_REPOSITORY_LINK]
@@ -114,7 +112,7 @@ To run the interactive Streamlit application on your local machine, follow these
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
-3.  **Install the required libraries:**
+3.  **Install the necessary libraries:**
     *Create a `requirements.txt` file with the following content and run `pip install -r requirements.txt`.*
     ```
     streamlit
@@ -142,7 +140,7 @@ To run the interactive Streamlit application on your local machine, follow these
     streamlit run app.py
     ```
 
-6.  **Open the app in your browser** at `http://localhost:8501`.
+6.  **The app is open at the browser location of** `http://localhost:8501`.
 
 ---
 
