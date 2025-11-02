@@ -9,3 +9,4 @@ nltk
 imbalanced-learn
 seaborn
 matplotlib
+keras
