@@ -1,11 +1,5 @@
 # Sentiment Analysis on Real-World E-Commerce Dataset (Amazon & Flipkart)
 
-🔗 **Live Deployed Project:** [https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app](https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/)
-
-### 🎥 Project Demonstration
-
-https://github.com/user-attachments/assets/3248b04b-f1c2-4819-b8e7-46287d07b826
-
 ## 📖 Overview
 
 This project tackles the problem of **multi-class sentiment analysis** for e-commerce product reviews. In today's data-driven world, understanding customer feedback is crucial for businesses to gauge product reception, identify issues, and make informed decisions. This system moves beyond simple positive/negative classification to predict a specific 1-to-5 star rating based on the review text.
@@ -26,6 +20,14 @@ A key part of this analysis was exploring **cross-domain generalization** (train
     * Interactive Confusion Matrices.
     * Detailed Classification Reports.
     * A comparative radar chart showing all model metrics at a glance.
+
+---
+
+🔗 **Live Deployed Project:** [https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app](https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/)
+
+### 🎥 Project Demonstration
+
+https://github.com/user-attachments/assets/3248b04b-f1c2-4819-b8e7-46287d07b826
 
 ---
 
