@@ -1,8 +1,7 @@
 # Sentiment Analysis on Real-World E-Commerce Dataset (Amazon & Flipkart)
 
-### 🚀 Live Deployed Project
+🔗 **Live Deployed Project:** [https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app](https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/)
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/)
 
 ### 🎥 Application Demonstration
 
