@@ -10,16 +10,16 @@ One of the most important aspects of this analysis was the experiment with **cro
 
 ### ✨ Key Features of the Project
 
-* **📊 Exploratory Data Analysis (EDA):** Upload a dataset to see an interactive overview, including rating distributions, review length analysis, and brand breakdowns.
-* **⚙️ Multi-Model Training:** Train five different models (Naive Bayes, Logistic Regression, SVM, Random Forest, LSTM) on the fly with configurable parameters (test size, TF-IDF features).
+* **📊 Exploratory Data Analysis (EDA):** Upload a Dataset and see an interactive overview of the Dataset, such as rating distributions, review length analysis, and brand breakdowns.
+* **⚙️ Multi-Model Training:** Train five models (Naive Bayes, Logistic Regression, SVM, Random Forest and LSTM) with varying parameters (test size, TF - IDF features).
 * **🔮 Live Prediction:**
-    * **Single Review:** Type or paste a new review for an instant 1-5 star rating prediction.
-    * **Batch Upload:** Upload a CSV of new reviews and get predictions for all of them, with an option to download the results.
-* **📈 Results & Metrics:** Get a detailed performance breakdown for each trained model, including:
-    * Accuracy, F1-Score, Precision, and Recall.
+    * **Single Review:** Type or paste a new review to have the 1-5 stars rating prediction instantly.
+    * **Batch Upload:** A CSV file of new reviews can be uploaded and predictions can be made on all the reviews, with an option to download the results.
+* **📈 Results & Metrics:** Observe a breakdown of performance of each trained model, including:
+    * Precision, Accuracy, F1-Score, and Recall.
     * Interactive Confusion Matrices.
-    * Detailed Classification Reports.
-    * A comparative radar chart showing all model metrics at a glance.
+    * Elaborated Classification Reports.
+    * The comparison of radar chart with all model metrics.
 
 ---
 
