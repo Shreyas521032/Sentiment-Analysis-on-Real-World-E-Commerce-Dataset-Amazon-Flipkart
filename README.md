@@ -2,7 +2,7 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://shreyas-sentiment-analysis-on-real-world-e-commerce-dataset.streamlit.app/])
 [![Demo Video](https://img.shields.io/badge/Demo-Video-red?style=for-the-badge&logo=youtube)]([[YOUR_DEMO_VIDEO_LINK](https://github.com/user-attachments/assets/098b569c-80a1-487d-adab-c3ed3aa902a2
-)])
+)
 
 ## 📖 Overview
 
