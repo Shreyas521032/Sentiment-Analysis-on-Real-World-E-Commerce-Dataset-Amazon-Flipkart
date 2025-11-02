@@ -221,7 +221,7 @@ This project successfully demonstrates the end-to-end process of building a high
 * [6] Ali, H.; Hashmi, E.; Yayilgan Yildirim, S.; Shaikh, S. Analyzing Amazon Products Sentiment: A Comparative Study of Machine and Deep Learning, and Transformer-Based Techniques. Electronics 2024, 13, 1305. doi: 10.3390/electronics13071305. [https://www.mdpi.com/2079-9292/13/7/1305](https://www.mdpi.com/2079-9292/13/7/1305)
 * [7] Sorour, S.E.; Alojail, A.; El-Shora, A.; Amin, A.E.; Abohany, A.A. A Hybrid Deep Learning Approach for Enhanced Sentiment Classification and Consistency Analysis in Customer Reviews. Mathematics 2024, 12, 3856. https://doi.org/10.3390/math12233856. [https://www.mdpi.com/2227-7390/12/23/3856](https://www.mdpi.com/2227-7390/12/23/3856)
 * [8] Yi Liu, Jiahuan Lu, Jie Yang, Feng Mao. Sentiment analysis for e-commerce product reviews by deep learning model of Bert-BiGRU-Softmax[J]. Mathematical Biosciences and Engineering, 2020, 17(6): 7819-7837. doi: 10.3934/mbe.2020398. [https://www.aimspress.com/article/10.3934/mbe.2020398](https://www.aimspress.com/article/10.3934/mbe.2020398)
-* [9] Talaat, A.S. Sentiment analysis classification system using hybrid BERT models. J Big Data 10, 110 (2023). doi: 10.1186/s40537-023-00781-w. https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00781-w](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00781-w)
+* [9] Talaat, A.S. Sentiment analysis classification system using hybrid BERT models. J Big Data 10, 110 (2023). doi: 10.1186/s40537-023-00781-w. [https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00781-w](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00781-w)
 
 
 
